@@ -1,0 +1,21 @@
+{
+  "name": "console-manager",
+  "version": "1.0.0",
+  "description": "A lib to handle all command inputs from the console.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "console",
+    "command-manager",
+    "manager",
+    "console-command"
+  ],
+  "author": "ABDevs",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "readline": "^1.3.0"
+  }
+}
