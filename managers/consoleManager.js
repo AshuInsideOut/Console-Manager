@@ -63,5 +63,4 @@ rl.on('line', (input) => {
 });
 
 module.exports.addCommand = addCommand;
-module.exports.init = init;
 module.exports.allCommands = allCommands;
