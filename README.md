@@ -5,7 +5,7 @@ You can easily take command and arguments from command line.
 
 # Setup
 
-Install the library with `npm i @abdevs/command-manager`.
+Install the library with `npm i @abdevs/console-manager`.
 
 ```js
 const consoleManager = require('@abdevs/console-manager')({
