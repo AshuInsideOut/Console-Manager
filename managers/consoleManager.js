@@ -48,7 +48,7 @@ function findCommandObj(content) {
         };
         if (executedCommand === command) return obj;
         for (const alias of aliases) {
-            if (args[0] !== alias) continue;
+            if (executedCommand !== alias) continue;
             return obj;
         }
     }
