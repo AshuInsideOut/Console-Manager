@@ -32,24 +32,17 @@ function addCommand(handlerObj) {
 }
 
 function findCommandObj(content) {
+    const contentSplit = content.split(/\s+/);
+    const executedCommand = contentSplit[0];
+    contentSplit.shift();
+    const args = contentSplit;
     for (const handlerObj of allCommands) {
         const command = handlerObj.command;
         const aliases = handlerObj.aliases || [];
-        const contentSplit = content.split(/\s+/);
-        const executedCommand = contentSplit[0];
-        contentSplit.shift();
-        const args = contentSplit;
-        const obj = {
-            handler: handlerObj.handler,
-            args,
-            command,
-            aliases,
-            description: handlerObj.description
-        };
-        if (executedCommand === command) return obj;
+        if (executedCommand === command) return { ...handlerObj, args, command, aliases };
         for (const alias of aliases) {
             if (executedCommand !== alias) continue;
-            return obj;
+            return { ...handlerObj, args, command, aliases };
         }
     }
 }
