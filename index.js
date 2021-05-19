@@ -1,9 +1,7 @@
-const consoleManager = require('./managers/consoleManager');
+const consoleManager = require('./managers/commandManager');
 
-function manager(options) {
-    if (options && options.removeHelpCommand) {
-        return consoleManager;
-    }
+module.exports.init = options => {
+    if (options && options.removeHelpCommand) return commandManager;
     consoleManager.addCommand({
         command: 'help',
         handler: async () => {
@@ -15,7 +13,6 @@ function manager(options) {
         },
         description: 'Shows all the avaliable commands'
     });
-    return consoleManager;
-}
-
-module.exports = manager;
+    return commandManager;
+};
+module.exports.commandManager = commandManager;
