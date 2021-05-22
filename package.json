@@ -1,6 +1,6 @@
 {
   "name": "@abdevs/console-manager",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "A lib to handle all command inputs from the console.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "manager",
     "console-command"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ABDevs-Org/Console-Manager.git"
+  },
   "author": "ABDevs",
   "license": "ISC",
   "dependencies": {
