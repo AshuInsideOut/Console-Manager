@@ -1,5 +1,5 @@
 const readline = require('readline');
-const colors = require('colors');
+const logger = require('../utils/logger');
 
 const registeredCommands = [];
 const allCommands = [];
@@ -8,13 +8,6 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
-const logger = () => {
-    const info = (message) => console.log('Console Manager'.green.bold, message.blue.bold);
-    const warn = (message) => console.log('Console Manager'.green.bold, message.yellow.bold);
-    const error = (message) => console.log('Console Manager'.green.bold, message.red.bold);
-    return { info, warn, error };
-};
 
 function addCommand(handlerObj) {
     const regFailedTemplate = 'Failed to register a command. Reason: ';

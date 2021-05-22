@@ -40,3 +40,9 @@ init({
 | aliases       |           []            |        String Array of as aliases        |
 
 \* Property is required
+
+# Terms and Conditions
+
+This Repository only available for code look up and personal use.
+
+You are not allowed to steal the code from this repository.
