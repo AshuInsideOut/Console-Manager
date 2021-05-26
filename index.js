@@ -1,6 +1,6 @@
 const commandManager = require('./managers/commandManager');
 
-module.exports.init = options => {
+function init(options) {
     if (options && options.removeHelpCommand) return commandManager;
     commandManager.addCommand({
         command: 'help',
@@ -13,6 +13,9 @@ module.exports.init = options => {
         },
         description: 'Shows all the avaliable commands'
     });
-    return commandManager;
+}
+
+module.exports = {
+    init,
+    ...commandManager
 };
-module.exports.commandManager = commandManager;

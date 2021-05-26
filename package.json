@@ -1,6 +1,6 @@
 {
   "name": "@abdevs/console-manager",
-  "version": "1.4.3",
+  "version": "2.0.0",
   "description": "A lib to handle all command inputs from the console.",
   "main": "index.js",
   "scripts": {
