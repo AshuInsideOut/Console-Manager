@@ -8,9 +8,9 @@ You can easily take command and arguments from command line.
 Install the library with `npm i @abdevs/console-manager`.
 
 ```js
-const { commandManager, init } = require('@abdevs/console-manager');
+const { addCommand, init } = require('@abdevs/console-manager');
 
-commandManager.addCommand({
+addCommand({
   command: 'do-something',
   handler: async (command, args) => {
     //Do Something
