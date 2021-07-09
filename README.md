@@ -3,6 +3,10 @@
 A library to manage and add console commands.
 You can easily take command and arguments from command line.
 
+# Support
+
+Join our [Discord Server](http://discord.abdevs.org) for any support related queries.
+
 # Setup
 
 Install the library with `npm i @abdevs/console-manager`.
@@ -12,7 +16,7 @@ const { addCommand, init } = require('@abdevs/console-manager');
 
 addCommand({
   command: 'do-something',
-  handler: async (command, args) => {
+  handler: async (args, command) => {
     //Do Something
   },
   description: 'This command does something',
@@ -26,11 +30,11 @@ init({
 
 ### Option Properties
 
-| Property Name     | Default |           Description            |
-| ----------------- | :-----: | :------------------------------: |
-| removeHelpCommand |  false  | Won't add a default help command |
+| Property Name | Default |        Description         |
+| ------------- | :-----: | :------------------------: |
+| isHelpCommand |  false  | Add a default help command |
 
-### HanlderObj Properties
+### Command Properties
 
 | Property Name |         Default         |               Description                |
 | ------------- | :---------------------: | :--------------------------------------: |
