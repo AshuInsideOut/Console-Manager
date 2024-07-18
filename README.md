@@ -7,14 +7,14 @@ You can easily take command and arguments from command line.
 
 # Support
 
-Join our [Discord Server](http://discord.abdevs.org) for any support related queries.
+Join our [Discord Server](https://discord.gg/HahCMDVxKp) for any support related queries.
 
 # Setup
 
-Install the library with `npm i @abdevs/console-manager`.
+Install the library with `npm i @ashuinsideout/console-manager`.
 
 ```js
-const { addCommand, init } = require('@abdevs/console-manager');
+const { addCommand, init } = require('@ashuinsideout/console-manager');
 
 addCommand({
   command: 'do-something',

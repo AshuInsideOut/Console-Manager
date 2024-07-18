@@ -1,5 +1,5 @@
 {
-  "name": "@abdevs/console-manager",
+  "name": "@ashuinsideout/console-manager",
   "version": "4.3.3",
   "description": "A lib to handle all command inputs from the console.",
   "main": "lib/index.js",
@@ -15,14 +15,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ABDevs-Org/Console-Manager.git"
+    "url": "git+https://github.com/AshuInsideOut/Console-Manager.git"
   },
-  "author": "ABDevs",
+  "author": "Arnav Gupta",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^16.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/AshuInsideOut/Console-Manager/issues"
+  },
+  "homepage": "https://github.com/AshuInsideOut/Console-Manager#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
